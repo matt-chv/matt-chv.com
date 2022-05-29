@@ -1,1 +1,4 @@
-matt-chv.com/
+.vs/
+__pycache__/
+public/
+venv/

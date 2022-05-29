@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block html_head %}
+{{ super() }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.min.js"></script>
+<script src="https://ableplayer.github.io/ableplayer/thirdparty/js.cookie.js"></script>
+<!-- Able Player CSS -->
+<link rel="stylesheet" href="https://ableplayer.github.io/ableplayer/build/ableplayer.min.css" type="text/css"/>
+<!-- Able Player JavaScript -->
+<script src="https://ableplayer.github.io/ableplayer/build/ableplayer.js"></script>
+{% endblock %}
+
+{% block left_menu %} 
+{{ super() }}
+{% endblock %}
+
+{% block page_container %}
+{{ super() }}
+{% endblock %}
+
+{% block page_header %}
+  <div class="row">
+    <header class="col-md-12">
+        <nav>
+            <div class="row">
+                <!-- navigation bar -->
+                <div class="col-md-8 col-sm-8 col-xs-4">
+                    <ul class="tabs">
+                        <li class="tab">
+                            <a class="home-btn" href="{{SITEURL}}"><i class="fa fa-home" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+{% endblock %}
+
+
+{% block content %}
+{{ super() }}
+<div class="blog-title">{{ article.title }}</div>
+
+    {%if article.url_ext %}
+        first published <a href="{{article.url_ext}}">here</a>
+    {% endif %}
+        
+    {%if article.youtubeid %}
+            This is a video, you can click on any part of the transcript to jump to the relevant section of the video.
+
+            <main role="main">
+            <div id="transcript"></div>
+            <div id="player">
+                <video id="video1" data-able-player preload="auto" width="480" height="360" poster="/public/img/business2.0_is_rendanheyi.svg" data-youtube-id="{{article.youtubeid}}" data-transcript-div="transcript" playsinline>
+                <track kind="captions" src="vtt/{{article.slug}}.vtt"/>
+                <track kind="chapters" src="vtt/{{article.slug}}_chapters.vtt"/>
+            </video>
+            </div>
+            </main>
+
+    {% endif %}
+
+    {% if (".pdf" in article.url_ext) %}
+        This is a pdf
+        <div>
+            <iframe id="pdf-js-viewer" src="{{article.url_ext}}" title="webviewer" frameborder="0" width="500" height="600"></iframe>
+        </div>
+    {% endif %}
+
+    <hr>
+
+    {{ article.content }}
+
+    {% if article.modified %}
+        <p>
+        Last updated: {{ article.locale_modified }}
+        </p>
+    {% endif %}
+<!--block content -->
+{% endblock %} 
+
+{% block footer %}
+{{ super() }}
+{% endblock %}
