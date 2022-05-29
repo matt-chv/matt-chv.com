@@ -1,0 +1,196 @@
+
+<!doctype html>
+<!-- tag 1.0 : first version published on matthieuchevrier.com -->
+<html lang="en">
+<head>
+
+<!--  Simple Page Needs
+================================================== -->
+<title>Matt - Embedded Systems Engineering</title>
+<meta charset="UTF-8">
+<meta name="description" content="Matt - Resume & vCard HTML Template">
+<meta name="keywords" content="personal, vcard, portfolio">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Favicon
+================================================== -->  
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="theme/css/bootstrap.css"/>
+<link rel="stylesheet" href="theme/css/reset.css"/>
+<link rel="stylesheet" href="theme/css/portfolio.min.css"/>
+<link rel="stylesheet" href="theme/css/owl.theme.css"/> 
+<link rel="stylesheet" href="theme/css/owl.carousel.css"/>
+<link rel="stylesheet" href="theme/css/style.css"/>
+<link rel="stylesheet" href="theme/css/colors/blue.css" id="color"/>
+
+    
+<!-- Google Web fonts
+================================================== --> 
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+
+<!-- Font Icons
+================================================== --> 
+<link rel="stylesheet" href="theme/fonts/font-awesome.min.css"/>
+<link rel="stylesheet" href="theme/fonts/flaticon.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.min.js"></script>
+<script src="https://ableplayer.github.io/ableplayer/thirdparty/js.cookie.js"></script>
+<!-- Able Player CSS -->
+<link rel="stylesheet" href="https://ableplayer.github.io/ableplayer/build/ableplayer.min.css" type="text/css"/>
+<!-- Able Player JavaScript -->
+<script src="https://ableplayer.github.io/ableplayer/build/ableplayer.js"></script>
+</head>
+
+
+
+
+
+<body>
+ 
+ 
+ <!-- Preloading -->
+<div id="preloader">
+    <div class="spinner">
+    </div>
+</div>  
+    
+<!-- Wrapper --> 
+<div class="wrapper top_60 container">
+  <div class="row">
+        
+<!-- Profile Section
+================================================== --> 
+<div class="col-lg-3 col-md-4">
+    <div class="profile">
+        <div class="profile-name">
+            <span class="name">Matthieu Chevrier</span><br>
+            <span class="job">Embedded Systems Engineering</span>
+        </div>
+        <figure class="profile-image">
+            <img src="images/chevrier.jpg" alt="">
+        </figure> 
+        <ul class="profile-information">
+            <li></li>
+            <li><p><span>Name:</span> Matthieu Chevrier</p></li>
+            <li><p><span>Birthyear:</span> 1976</p></li>
+            <li><p><span>Profession:</span> Embedded Systems Engineering</p></li>
+            <li><p><span>Email:</span> contact@matthieuchevrier.com</p></li>
+            <li><p><span>Skype:</span> matthieuchevrier</p></li>
+        </ul>
+        <div class="col-md-12">
+            <a href="https://www.linkedin.com/in/matthieuchevrier/"><button class="site-btn icon">Online Cv <i class="fa fa-download" aria-hidden="true"></i></button></a>
+        </div>
+    </div>
+</div>
+
+
+<!-- Page Tab Container Div -->   
+<div id="ajax-tab-container" class="col-lg-9 col-md-8 tab-container">
+
+
+  <div class="row">
+    <header class="col-md-12">
+        <nav>
+            <div class="row">
+                <!-- navigation bar -->
+                <div class="col-md-8 col-sm-8 col-xs-4">
+                    <ul class="tabs">
+                        <li class="tab">
+                            <a class="home-btn" href="https://matt-chv.gitlab.io/pyssg_test"><i class="fa fa-home" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-8 dynamic">
+                    <a href="mailto:contact@matthieuchevrier.com" class="pull-right site-btn icon hidden-xs">Contact Me <i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+                    <div class="hamburger pull-right hidden-lg hidden-md"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                    <div class="hidden-md social-icons pull-right"> 
+                        <a class="lin" href="https://www.linkedin.com/in/matthieuchevrier/"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
+                        <a class="gs" href="https://scholar.google.com/citations?hl=fr&user=gs3enb8AAAAJ"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
+                        <a class="fb" href="https://www.facebook.com/matthieu.chevrier.79"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                        <a class="tw" href="https://twitter.com/matt__chv"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
+                        <a class="git" href="https://github.com/matt-chv"><i class="fa fa-github" aria-hidden="true"></i></a> 
+                        <a class="stack" href="https://stackexchange.com/users/13039919/mcv"><i class="fa fa-stack-exchange" aria-hidden="true"></i></a> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+<div class="blog-title">The Bear and the Sloth - the secret of energy harvesting</div>
+
+        
+
+
+    <hr>
+
+    <h1>The secrets of energy harvesting: The sloth and the bear</h1>
+<blockquote>
+<p>originally posted <a href="https://e2e.ti.com/blogs_/b/industrial_strength/posts/the-secrets-of-energy-harvesting-the-sloth-and-the-bear">here</a></p>
+</blockquote>
+<p>Industry 4.0 is a term that describes the vision that cyberphysical systems will revolutionize factories. In a recent German-language article on the concept, I discussed how industrial revolutions have so far been a combination of new data management and the mastery of a new energy source— and that energy harvesting is the “fuel” for Industry 4.0. Since the limited sharing of best practices for successful energy harvesting limits the success rate for those designs, I will share some of those best practices in this blog.</p>
+<p>I’m often asked for tips and tricks on how to best design an energy harvesting system. In this post, I’ll discuss the importance of being a “bear” rather than a “sloth” when it comes to energy harvesting systems. </p>
+<p>The secret for energy harvesting is to be like a bear, who:
+* Knows when winter is coming and has the ability to adapt.
+* Is fast enough to catch fish in anticipation of winter.
+* Is capable of a huge reduction in metabolism when the environment requires it (hibernation).
+* Is able to wake up extremely quickly from hibernation when external conditions stimulate its senses. </p>
+<p>The most frequent mistake for energy harvesting is to be like a sloth, who:
+* Is not capable of adapting to a changing environment (as his limited natural habitat shows).
+* Is barely capable of accelerating even when its survival is at stake.
+* Does not adapt its energy spending to the situation, but always keeps it at a minimum.</p>
+<p>But how do sloths and bears translate to embedded electronics systems? While a complete answer may require a whole second blog post, most designers should already know that a solar cell can produce energy anywhere in a range between 0 (no light), 2-5µW (poorly lit ) and up to 10mW (full sunlight) for the same square centimeter of active area. A bear-like system would be able to harvest all of this energy, while a sloth-like one would be optimized for the worst-case supply, say 1µW. By nature, the sloth approach limits the opportunity to harvest ambient energy and fails to adapt to new environmental conditions, thereby limiting the benefits that they system could provide to end customers.</p>
+<p>You may ask how you can actually design a system that behaves like a bear? One place to start is with the Generic Energy Harvesting Adapter Module for Thermoelectric Generators (TEG) TI Designs reference design. In its lowest power mode, this design runs with 60nA and can harvest energy from 40µW to a few hundred milliwatts with more than 80% efficiency. Also, when the system is in hibernation mode, it can wake up at any time to react to environmental changes.</p>
+<p>This performance is possible because of a unique combination of TI devices for ultra-low power and energy harvesting: the TPL5100 programmable timer and bq25570 power management integrated circuit (IC), plus the industry’s lowest power microcontroller unit (MCU), the MSP430FR5969 MCU, and lowest power comparator, the TLV3691.</p>
+<p>The TPL5100 generates the “heart beat” of this reference design. This timer’s best feature is its ability to run at 30nA and wake the MSP430™ MCU periodically for housekeeping. When I helped define this IC, I wanted to be able to either generate an interrupt to an ultra-low-power MCU such as MSP430FR5969 MCU or disconnect the load. In this TI Design reference design, I am showing how to use it in this first manner.</p>
+<p>For harvesting the ambient energy, I selected the bq25570, a DC/DC boost converter that can convert 90 percent of its input energy source from as low as 100µW, while running dynamic maximum power-point tracking (MPPT), which can also be powered down and then only takes 1nW.</p>
+<p>The brain of the system is the MSP430FR5969 MCU. This MCU, in its lowest power mode (LPM4.5), takes only 20nA while keeping its general-purpose input/output (GPIO) remain active for either asynchronous interrupts or to power directly low-power functions of the system.</p>
+<p>The “senses” that wake our bear from hibernation come from the TLV3691, a comparator that is operational with only 75nA and designed to monitor the input voltage. Given its low power consumption, the GPIO of the MSP430FR5969 MCU can power this comparator, and turn it on and off depending on the need.</p>
+<p><img alt="" src="https://e2e.ti.com/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-09-70/scheme.jpg"></p>
+<p>Figure 2: Block diagram of the reference design, in a BoosterPack form factor for rapid prototyping</p>
+<p>If you are looking to design an extremely low-power or energy harvesting-based system, have a look at the schematics, layout and test data from this reference design. Feel free to share success stories or challenges you faced from previous designs in the comments.</p>
+<p>And do be bearish and make your energy harvesting so adaptable and so compelling it take over the entire ecosystem!</p>
+<p>Additional resources
+Download the schematic, test data, design files and bill of materials for the Generic Energy Harvesting Adapter Module for Thermoelectric Generators (TEG) TI Designs reference design.
+Learn why Industry 4.0 will be fueled by energy harvesting in this German-language article.
+If your energy harvesting system needs to be isolated from the main system, download the schematic from this TI Designs reference design (TIDA-00349).</p>
+
+<!--block content -->
+
+
+    <!-- Footer ================================================== --> 
+    <footer>
+        <div class="footer col-md-12 top_30 bottom_30">
+            <div class="name col-md-4 hidden-md hidden-sm hidden-xs">Matt Chevrier.</div>
+            <div class="copyright col-lg-8 col-md-12">©2016-2021 All rights reserved. </div>  
+        </div>
+    </footer>
+    
+</div> <!-- Tab Container - End -->
+</div> <!-- Row - End --> 
+</div> <!-- Wrapper - End -->   
+
+<!-- Javascripts
+================================================== -->  
+<script src="theme/js/jquery-2.1.4.min.js"></script> 
+<script src="theme/js/jquery.portfolio.min.js"></script>
+<script src="theme/js/bootstrap.min.js"></script> 
+<script src="theme/js/jquery.easytabs.min.js"></script>
+<script src="theme/js/owl.carousel.min.js"></script> 
+<script src="theme/js/main.js"></script>
+<!-- for color alternatives >
+<script src="theme/js/jquery.cookie-1.4.1.min.js"></script>
+<script src="theme/js/Demo.js"></script>
+<link rel="stylesheet" href="theme/css/Demo.min.css" /-->
+
+<!-- end block footer -->
+
+ 
+
+</body>
+</html>
+
