@@ -2,7 +2,7 @@ Title: HEX4Humans
 Date: 2020-09-17
 Category: software
 Tags: software
-cover_image_url: HEW4Humans.png
+cover_image_url: HEX4Humans.png
 cover_image_caption: git repository for Hex4Humans
 url_ext: https://github.com/matt-chv/HEX4Humans
 Slug: hex4humans
