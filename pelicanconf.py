@@ -3,7 +3,7 @@
 
 AUTHOR = 'matt_chv'
 SITENAME = 'Matt CHV embedded system engineering'
-SITEURL = 'https://matt-chv.gitlab.io/pyssg_test/'
+SITEURL = 'https://matthieuchevrier.com'
 PLUGIN_PATHS = ['plugins']
 #PLUGINS = ['deadlinks']
 DEADLINK_VALIDATION = True
