@@ -1,4 +1,4 @@
-import pkg_resources
+# import pkg_resources
 from os.path import abspath,join,pardir
 import sys
 import subprocess
@@ -15,7 +15,7 @@ def pelican_wrapper(test_installed_package=False):
     """
     run_pelican=True
     
-    if test_installed_package:
+    """if test_installed_package:
 
         installed_packages = pkg_resources.working_set
         installed_versionned_packages_list = sorted(["%s==%s" % (i.key, i.version)
@@ -28,7 +28,7 @@ def pelican_wrapper(test_installed_package=False):
         for needed in ["pelican","jinja2","markdown","pelican-sitemap"]:
             if needed not in installed_packages_list:
                 print(f"missing {needed}")
-                run_pelican=False
+                run_pelican=False"""
         
     if run_pelican:
         subprocess.run(["pelican","content","-t","theme","-o",www_folder])
