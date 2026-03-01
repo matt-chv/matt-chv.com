@@ -14,6 +14,6 @@ On p468 it states about the TPL5000
 > TPL5000/5100 - These impressive nanopower timers from Texas Instruments run from 1.8V to 5.5V, draw a meager 40 nA (yes, <i>nano</i>amps!) and are 3-bit programmable
 
 TPL5000 Credits:
-* Design: 
-* Product definition: Matthieu Chevrier & Andras Kramer
-* Original idea: 
+
+* Design: [Raffaele Boi](https://www.linkedin.com/in/raffaele-boi-a4072014/)
+* Product definition: Matthieu Chevrier
