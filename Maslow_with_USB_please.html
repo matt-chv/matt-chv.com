@@ -35,6 +35,13 @@
 <link rel="stylesheet" href="theme/fonts/font-awesome.min.css"/>
 <link rel="stylesheet" href="theme/fonts/flaticon.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.min.js"></script>
+<script src="https://ableplayer.github.io/ableplayer/thirdparty/js.cookie.js"></script>
+<!-- Able Player CSS -->
+<link rel="stylesheet" href="https://ableplayer.github.io/ableplayer/build/ableplayer.min.css" type="text/css"/>
+<!-- Able Player JavaScript -->
+<script src="https://ableplayer.github.io/ableplayer/build/ableplayer.js"></script>
 </head>
 
 
@@ -42,13 +49,14 @@
 
 
 <body>
+ 
+
 
 <!-- Page Tab Container Div -->   
 <div id="ajax-tab-container" class="col-lg-9 col-md-8 tab-container">
 
-<!-- Header
-================================================== --> 
-<div class="row">
+
+  <div class="row">
     <header class="col-md-12">
         <nav>
             <div class="row">
@@ -56,13 +64,8 @@
                 <div class="col-md-8 col-sm-8 col-xs-4">
                     <ul class="tabs">
                         <li class="tab">
-                            <a class="home-btn" href="#home"><i class="fa fa-home" aria-hidden="true"></i></a>
+                            <a class="home-btn" href="https://matthieuchevrier.com"><i class="fa fa-home" aria-hidden="true"></i></a>
                         </li>
-                        <li class="tab"><a href="#resume">RESUME</a></li>
-                        <li class="tab"><a href="#portfolio">PROJECTS</a></li>
-                        <!--li class="tab"><a href="#blog">PUBLICATIONS</a></li-->
-                        <li class="tab"><a href="#contact">CONTACT</a></li>
-                        <li class="tab"><a href="#credits">CREDITS</a></li>
                     </ul>
                 </div>
 
@@ -82,32 +85,29 @@
         </nav>
     </header>
 
-    <h2>Tags for Matt CHV embedded system engineering</h2>
-    <ul>
-            <li><a href="https://matthieuchevrier.com/tag/articles.html">articles</a> (1)</li>
-            <li><a href="https://matthieuchevrier.com/tag/blog.html">blog</a> (7)</li>
-            <li><a href="https://matthieuchevrier.com/tag/business.html">business</a> (3)</li>
-            <li><a href="https://matthieuchevrier.com/tag/conference.html">conference</a> (1)</li>
-            <li><a href="https://matthieuchevrier.com/tag/embedded-world.html">Embedded-World</a> (1)</li>
-            <li><a href="https://matthieuchevrier.com/tag/energy_harvesting.html">energy_harvesting</a> (1)</li>
-            <li><a href="https://matthieuchevrier.com/tag/fiction.html">fiction</a> (3)</li>
-            <li><a href="https://matthieuchevrier.com/tag/gitlab.html">gitlab</a> (1)</li>
-            <li><a href="https://matthieuchevrier.com/tag/hannovermesse.html">HannoverMesse</a> (1)</li>
-            <li><a href="https://matthieuchevrier.com/tag/hardware.html">hardware</a> (3)</li>
-            <li><a href="https://matthieuchevrier.com/tag/harvesting.html">harvesting</a> (2)</li>
-            <li><a href="https://matthieuchevrier.com/tag/highlights.html">Highlights</a> (1)</li>
-            <li><a href="https://matthieuchevrier.com/tag/hwpioneer.html">HWPioneer</a> (1)</li>
-            <li><a href="https://matthieuchevrier.com/tag/idtechex.html">IDTechEx</a> (2)</li>
-            <li><a href="https://matthieuchevrier.com/tag/low-power.html">low-power</a> (1)</li>
-            <li><a href="https://matthieuchevrier.com/tag/pelican.html">pelican</a> (2)</li>
-            <li><a href="https://matthieuchevrier.com/tag/public_testimonial.html">public_testimonial</a> (4)</li>
-            <li><a href="https://matthieuchevrier.com/tag/robotics.html">robotics</a> (1)</li>
-            <li><a href="https://matthieuchevrier.com/tag/sensing.html">sensing</a> (3)</li>
-            <li><a href="https://matthieuchevrier.com/tag/sensor.html">sensor</a> (7)</li>
-            <li><a href="https://matthieuchevrier.com/tag/software.html">software</a> (1)</li>
-            <li><a href="https://matthieuchevrier.com/tag/techartc.html">techartc</a> (1)</li>
-            <li><a href="https://matthieuchevrier.com/tag/tpl5000.html">tpl5000</a> (1)</li>
-    </ul>
+
+<div class="blog-title">Maslow's pyramid revised...</div>
+
+        
+
+
+    <hr>
+
+    <p>Back in the 1940s, Abraham Maslow confidently stacked human needs into a neat little pyramid: food, safety, love, esteem, self-actualisation. Very wholesome. Very pre-Wi-Fi.</p>
+<p>Gen Beta, however, would like a revision.</p>
+<p>Level 0: Physiological → Battery.
+You think humans need water? Try taking a 2% phone away from a 14-year-old. The body survives. The personality does not.</p>
+<p>Level 1: Safety → Wireless.
+Forget shelter. True security is full bars and stable Wi-Fi. “No signal” is the modern wolf at the door.</p>
+<p>Level 2: Love &amp; Belonging → Social Networks.
+Family dinners are nice. But did they react to your story within seven minutes? Didn’t think so.</p>
+<p>Level 3: Esteem → Followers.
+Once it was <code>I think, therefore I am.</code> Now it’s <code>I posted, therefore I refresh.</code></p>
+<p>Level 4: Self-Actualisation -&gt; Logging Off.
+The highest form of enlightenment? Turning your phone off on purpose. Not because it died. Because you chose to.</p>
+<p>Maslow built a pyramid. Gen Beta just wants a USB plug at the base of it.</p>
+
+<!--block content -->
 
 
     <!-- Footer ================================================== --> 
@@ -136,6 +136,7 @@
 <link rel="stylesheet" href="theme/css/Demo.min.css" /-->
 
 <!-- end block footer -->
+
  
 
 </body>
