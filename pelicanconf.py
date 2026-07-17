@@ -9,7 +9,7 @@ PLUGIN_PATHS = ['plugins']
 DEADLINK_VALIDATION = True
 
 PATH = 'content'
-STATIC_PATHS = ["images","vtt"]
+STATIC_PATHS = ["images","vtt", "ics"]
 OUTPUT_PATH = 'public'
 
 TIMEZONE = 'Europe/Berlin'

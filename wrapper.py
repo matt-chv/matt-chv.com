@@ -12,6 +12,10 @@ def pelican_wrapper(test_installed_package=False):
     a. check for required packages
     b. run specific actions (like own pelican extensions not available in 
         pelican repository...)
+
+    for static paths, to be copied in output folder, simply change
+    in pelicanconf.py, for example:
+    STATIC_PATHS = ["images","vtt", "ics"]
     """
     run_pelican=True
     
